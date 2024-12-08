@@ -17,10 +17,10 @@ function loadData(filePath: string): [number[], number[]] {
 
 let [left, right]: [number[], number[]] = loadData("puzzle_input.txt");
 
-let similarity_score: number = 0;
-left.forEach((left_value) => {
-    let appearances = right.filter(right_value => left_value == right_value).length;
-    similarity_score += left_value * appearances;
+let similarityScore: number = 0;
+left.forEach((leftValue) => {
+    let appearances = right.filter(rightValue => leftValue == rightValue).length;
+    similarityScore += leftValue * appearances;
 });
 
-console.log(similarity_score);
+console.log(similarityScore);
